@@ -43,7 +43,7 @@ def twitter_scraping_v3(first_day, second_day, first_month, second_month,
     """gets called per 2 sets of days for the start and end parameter of the
     twitter scraper function"""
     lang = "english"
-    limit = 10000000
+    limit = 1000
 
     start = dt.date(first_year, first_month, first_day)
     end = dt.date(second_year, second_month, second_day)
@@ -58,7 +58,7 @@ def twitter_scraping_v3(first_day, second_day, first_month, second_month,
 def twitter_scraping_v2(first_day, second_day, year, first_month, second_month, term):
     """gets called per 2 sets of days for the start and end parameter of the
     twitter scraper function"""
-    limit = 10000000
+    limit = 1000
     lang = "english"
 
     start = dt.date(year, first_month, first_day)
@@ -74,7 +74,7 @@ def twitter_scraping_v2(first_day, second_day, year, first_month, second_month, 
 def twitter_scraping(first_day, second_day, year, month, term):
     """gets called per 2 sets of days for the start and end parameter of the
     twitter scraper function"""
-    limit = 10000000
+    limit = 1000
     lang = "english"
 
     start = dt.date(year, month, first_day)
