@@ -9,8 +9,10 @@ import numpy as np
 
 def main():
     """iterates per 2 day of each month of each year and calls the twitter scraping function"""
+    """input the number of years you want to scrape in list_years"""
     list_years = [2020, 2019, 2018, 2017, 2016]
-    companies = ["tesla", "amazon", "apple", "netflix", "facebook", "microsoft", "google", "alphabet", "boeing"]
+    """input key terms in companies list to scrape from """
+    companies = ["bitcoin", "btc", "ethereum", "eth"]  
     for term in companies:
         print(f"Analyzing term: {term}")
         for year in list_years:
@@ -98,5 +100,5 @@ def save_df(dataframe, term):
     else:
         dataframe.to_csv(f"E:\\Tweet Data\\tweets {term}.csv", index=False)
 
-
+        
 main()
